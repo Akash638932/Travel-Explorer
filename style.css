@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Indie+Flower&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rowdies:wght@300;400;700&family=Sigmar&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap&quot");
+
+/*
+    backgrounds & colors
+    box modal
+    postion & display
+    flexboxes ----
+    grid
+    transition
+    transforms
+    animations
+    media
+    modules
+    variables
+
+
+
+    box -> width, height , border
+    align -> position, flexbox
+
+
+
+
+    tagName -> it affect all the tags with same name
+    p -> all pragraphs in webpage
+
+    class
+    .
+
+    id
+    #
+
+    child selectors
+
+    .class childName
+    #id childName
+
+    .class .childClass
+    .class #childId
+
+    attribute selector
+
+
+
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* font-weight: 800;
+  font-style: normal; */
+}
+
+.wrapper {
+  min-height: 100vh;
+  /* border: 1px solid; */
+  background-image: url("https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?cs=srgb&dl=boat-exotic-freedom-1371360.jpg&fm=jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* dont allow to scroll the background */
+}
+header {
+  /* border: 1px solid white; */
+  width: 90%;
+  margin: auto;
+  position: sticky;
+  top: 30px;
+  height: 70px;
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  box-shadow: 0px 0px 1px gray;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-items: center;
+}
+
+.logo span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  color: rgb(219, 180, 11);
+}
+nav {
+  /* border: 1px solid; */
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+/* nav a:hover {
+  color: orange;
+} */
+
+/* main content stylings */
+
+main {
+  /* border: 1px solid white; */
+  min-height: 100vh;
+}
+.corousel-section {
+  /* border: 1px solid red; */
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.corousel {
+  /* border: 1px solid blue; */
+  min-height: 70vh;
+  width: 80%;
+  background-image: url("https://static.toiimg.com/photo/72494148.cms?imgsize=1958185");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.corousel button {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  outline: none;
+  border: none;
+}
+
+.corousel span {
+  /* border: 1px solid white; */
+  width: 60%;
+  display: inline-block;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* packages section */
+.packages-section {
+  /* border: 1px solid white; */
+  min-height: 100vh;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: st; */
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+}
+.packages-section h2 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+.packages-cards {
+  /* border: 1px solid white; */
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  gap: 40px;
+}
+.card {
+  min-height: 500px;
+  width: 350px;
+  /* border: 1px solid white; */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: rgb(57, 55, 55);
+}
+.content {
+  padding: 5px;
+}
+.card p:nth-child(1) {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.duration {
+  /* font-size: 1.5rem; */
+  color: rgb(219, 180, 11);
+}
+.card img {
+  width: 100%;
+  height: 40%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.plans {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  /* flex items going outside then it wraps then on the new line */
+}
+.plans span {
+  background-color: blue;
+  color: white;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.card button {
+  height: 50px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  background-color: rgb(219, 180, 11);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+footer {
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: white;
+  background-image: url("https://tse2.mm.bing.net/th/id/OIP.NG9xL2co9h47ADXXwZTKwwHaJ5?cb=defcachec2&w=819&h=1094&rs=1&pid=ImgDetMain&o=7&rm=3");
+  background-position: center;
+  background-attachment: fixed;
+  
+   background-size: cover; 
+}
